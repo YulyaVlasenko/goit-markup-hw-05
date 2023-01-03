@@ -58,7 +58,7 @@
     <main>
         <section class="hero overlay">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
+            <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
         </section>
         
         <section class="section features">
@@ -126,12 +126,20 @@
             <div class="container">
                 <h2 class="section-title"> Чим ми займаємося</h2>
                 <ul class="list">
-                    <li class="item"><img class="image" src="./images/task1.jpg"
-                            alt="Руки на клавіатурі набирають код, який видно на моніторі ноутбука та планшета" width="370"></li>
-                    <li class="item"><img class="image" src="./images/task2.jpg"
+                    <li class="item">
+                        <img class="image" src="./images/task1.jpg"
+                            alt="Руки на клавіатурі працюють з десктопним додатком, який відображається на моніторі ноутбука та планшета" width="370">
+                        <p class="duties-text">Десктопні додатки</p>
+                    </li>
+                    <li class="item">
+                        <img class="image" src="./images/task2.jpg"
                             alt="В лівій руці смартфон, права на клавіатурі ноутбука, на екрані якого видно три варіанта оформлення контенту"
-                            width="370"></li>
-                    <li class="item"><img class="image" src="./images/task3.jpg" alt="У руках знаходиться планшет, на екрані якого палітра кольорів" width="370">
+                            width="370">
+                        <p class="duties-text">Мобільні додатки</p>
+                    </li>
+                    <li class="item">
+                        <img class="image" src="./images/task3.jpg" alt="У руках знаходиться планшет, на екрані якого палітра кольорів" width="370">
+                        <p class="duties-text">Дизайнерські рішення</p>
                     </li>
                 </ul>
             </div>
@@ -404,6 +412,16 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-black" type="button" data-modal-close>
+                <img src="./images/close-black-18dp.svg" alt="чорний хрестик закриття діалогового вікна">
+            </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
  
 </body>
 
